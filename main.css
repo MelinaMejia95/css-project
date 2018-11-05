@@ -178,7 +178,11 @@
     #product-overview h1 {
         font-size: 3rem;
     }
-    
+
+}
+
+@media (min-width: 40rem) {
+
     .plan__list {
         width: 100%;
         text-align: center;
@@ -202,8 +206,9 @@
         vertical-align: top;
         max-width: 25rem;
     }
-
+    
 }
+
 
 
 

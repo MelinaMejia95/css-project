@@ -14,7 +14,10 @@ for (var i = 0; i < selectPlanButtons.length; i++) {
         backdrop.style.display = 'block'; */
         //modal.className = 'open'; / This will actualy overwrite the complete class
         modal.classList.add('open');
-        backdrop.classList.add('open');
+        backdrop.style.display = 'block';
+        setTimeout(() => {
+            backdrop.classList.add('open');
+        }, 10);
     });
     
 }
@@ -33,9 +36,15 @@ function closeModal() {
         modal.classList.remove('open');
     }
     backdrop.classList.remove('open');
+    setTimeout(() => {
+        backdrop.style.display = 'none';
+    }, 200);
 }
 
 toogleButton.addEventListener('click', () => {
     mobileNav.classList.add('open');
-    backdrop.classList.add('open');
+    backdrop.style.display = 'block';
+    setTimeout(() => {
+        backdrop.classList.add('open');
+    }, 10);
 });

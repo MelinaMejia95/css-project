@@ -38,6 +38,7 @@ main {
 .package:active {
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     border-color: #ff5454 !important;
+    animation: going-up 1s ease-out;
 }
 
 .package a {
@@ -139,4 +140,16 @@ main {
         border-right-color: #ff5454;
     }
 
+}
+
+@keyframes going-up {
+    0% {
+        transform: translateY(0rem);
+    }
+    50% {
+        transform: translateY(-1.5rem);
+    }
+    100% {
+        transform: translateY(0rem);
+    }
 }

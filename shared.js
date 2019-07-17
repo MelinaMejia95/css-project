@@ -4,6 +4,7 @@ var selectPlanButtons = document.querySelectorAll('.plan button');
 var closeModalButton = document.querySelector('.modal__action--negative');
 var toogleButton = document.querySelector('.toggle-button');
 var mobileNav = document.querySelector('.mobile-nav');
+var ctaButton = document.querySelector('.main-nav__item--cta');
 
 //console.dir(backdrop.style['background-image']); / A different way to access to CSS properties
 
@@ -47,4 +48,16 @@ toogleButton.addEventListener('click', () => {
     setTimeout(() => {
         backdrop.classList.add('open');
     }, 10);
+});
+
+ctaButton.addEventListener('animationstart', () => {
+    console.log('animation started', event);
+});
+
+ctaButton.addEventListener('animationend', () => {
+    console.log('animation ended', event);
+});
+
+ctaButton.addEventListener('animationiteration', () => {
+    console.log('animation iteration', event);
 });
